@@ -9,7 +9,7 @@ function AvailableProducts() {
 
     const fetchProductsHandler = useCallback(async () => {
         try {
-            const url = 'http://localhost:8080/products'
+            const url = '/products'
             const response = await fetch(url);
             if (!response.ok) {
                 throw new Error('Something went wrong!');
